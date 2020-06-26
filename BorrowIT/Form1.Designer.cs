@@ -1,6 +1,6 @@
 ﻿namespace BorrowIT
 {
-    partial class Form1
+    partial class BorrowIT
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.itemName_txtb = new System.Windows.Forms.TextBox();
+            this.who_txtb = new System.Windows.Forms.TextBox();
+            this.save_btn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.items_list = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // itemName_txtb
+            // 
+            this.itemName_txtb.Location = new System.Drawing.Point(13, 31);
+            this.itemName_txtb.Name = "itemName_txtb";
+            this.itemName_txtb.Size = new System.Drawing.Size(139, 20);
+            this.itemName_txtb.TabIndex = 0;
+            // 
+            // who_txtb
+            // 
+            this.who_txtb.Location = new System.Drawing.Point(159, 31);
+            this.who_txtb.Name = "who_txtb";
+            this.who_txtb.Size = new System.Drawing.Size(131, 20);
+            this.who_txtb.TabIndex = 1;
+            // 
+            // save_btn
+            // 
+            this.save_btn.Location = new System.Drawing.Point(297, 31);
+            this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new System.Drawing.Size(93, 23);
+            this.save_btn.TabIndex = 2;
+            this.save_btn.Text = "Save";
+            this.save_btn.UseVisualStyleBackColor = true;
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(53, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Item Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(213, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Who";
+            // 
+            // items_list
+            // 
+            this.items_list.FormattingEnabled = true;
+            this.items_list.Location = new System.Drawing.Point(13, 68);
+            this.items_list.Name = "items_list";
+            this.items_list.Size = new System.Drawing.Size(377, 355);
+            this.items_list.TabIndex = 5;
+            // 
+            // BorrowIT
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(418, 450);
+            this.Controls.Add(this.items_list);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.save_btn);
+            this.Controls.Add(this.who_txtb);
+            this.Controls.Add(this.itemName_txtb);
+            this.Name = "BorrowIT";
+            this.Text = "BorrowIT";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox itemName_txtb;
+        private System.Windows.Forms.TextBox who_txtb;
+        private System.Windows.Forms.Button save_btn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox items_list;
     }
 }
 

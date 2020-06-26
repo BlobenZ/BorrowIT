@@ -1,0 +1,10 @@
+C:\Users\BlobenZ\Google Drive\Dev\BorrowIT\BorrowIT\bin\Debug\BorrowIT.exe.config
+C:\Users\BlobenZ\Google Drive\Dev\BorrowIT\BorrowIT\bin\Debug\BorrowIT.exe
+C:\Users\BlobenZ\Google Drive\Dev\BorrowIT\BorrowIT\bin\Debug\BorrowIT.pdb
+C:\Users\BlobenZ\Google Drive\Dev\BorrowIT\BorrowIT\obj\Debug\BorrowIT.csprojAssemblyReference.cache
+C:\Users\BlobenZ\Google Drive\Dev\BorrowIT\BorrowIT\obj\Debug\BorrowIT.BorrowIT.resources
+C:\Users\BlobenZ\Google Drive\Dev\BorrowIT\BorrowIT\obj\Debug\BorrowIT.Properties.Resources.resources
+C:\Users\BlobenZ\Google Drive\Dev\BorrowIT\BorrowIT\obj\Debug\BorrowIT.csproj.GenerateResource.cache
+C:\Users\BlobenZ\Google Drive\Dev\BorrowIT\BorrowIT\obj\Debug\BorrowIT.csproj.CoreCompileInputs.cache
+C:\Users\BlobenZ\Google Drive\Dev\BorrowIT\BorrowIT\obj\Debug\BorrowIT.exe
+C:\Users\BlobenZ\Google Drive\Dev\BorrowIT\BorrowIT\obj\Debug\BorrowIT.pdb

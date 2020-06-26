@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace BorrowIT
 {
-    public partial class Form1 : Form
+    public partial class BorrowIT : Form
     {
-        public Form1()
+        public BorrowIT()
         {
             InitializeComponent();
+        }
+
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+            string item = itemName_txtb.Text;
+            string who = who_txtb.Text;
+            Item newItem = new Item(item, who);
+            items_list.Items.Add(item + " : " + who);
         }
     }
 }
