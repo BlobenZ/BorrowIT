@@ -55,7 +55,6 @@
             this.itemName_txtb.Name = "itemName_txtb";
             this.itemName_txtb.Size = new System.Drawing.Size(139, 20);
             this.itemName_txtb.TabIndex = 0;
-            this.itemName_txtb.TabStop = false;
             this.itemName_txtb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.itemName_txtb_KeyPress);
             // 
             // who_txtb
@@ -63,13 +62,12 @@
             this.who_txtb.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.who_txtb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.who_txtb.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.who_txtb.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.who_txtb.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.who_txtb.Location = new System.Drawing.Point(252, 24);
             this.who_txtb.Multiline = true;
             this.who_txtb.Name = "who_txtb";
             this.who_txtb.Size = new System.Drawing.Size(131, 20);
             this.who_txtb.TabIndex = 1;
-            this.who_txtb.TabStop = false;
             this.who_txtb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.who_txtb_KeyPress);
             // 
             // add_btn
