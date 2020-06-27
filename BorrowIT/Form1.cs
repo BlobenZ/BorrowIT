@@ -75,10 +75,10 @@ namespace BorrowIT
             p.Width = 490;
             p.Height = 42;
             p.Top = positon * 42;
-            p.Left = 13;
+            p.Left = 16;
             //Items In Panel
-            TextBox ItemName = new TextBox();
-            TextBox Who_txtb = new TextBox();
+            Label ItemName = new Label();
+            Label Who_txtb = new Label();
             Button Delete_btn = new Button();
             ItemsDeletedButtons.Add(Delete_btn);
             //Add Items to Panel
@@ -87,24 +87,20 @@ namespace BorrowIT
             p.Controls.Add(Delete_btn);
             //Item Settings
             //ItemName
-            ItemName.Multiline = true;
             ItemName.Width = 200;
             ItemName.Height = 30;
             ItemName.Text = item;
             ItemName.Font = new Font("Lucida Sans Unicode", 16, FontStyle.Bold);
-            ItemName.TextAlign = HorizontalAlignment.Center;
-            ItemName.ReadOnly = true;
+            ItemName.TextAlign = ContentAlignment.MiddleCenter;
             ItemName.BorderStyle = BorderStyle.FixedSingle;
             ItemName.BackColor = Color.FromArgb(50, 50, 50);
             ItemName.ForeColor = Color.FromArgb(190, 190, 190);
             //WhoTxtb
-            Who_txtb.Multiline = true;
             Who_txtb.Width = 200;
             Who_txtb.Height = 30;
             Who_txtb.Text = who;
             Who_txtb.Font = new Font("Lucida Sans Unicode", 16, FontStyle.Bold);
-            Who_txtb.TextAlign = HorizontalAlignment.Center;
-            Who_txtb.ReadOnly = true;
+            Who_txtb.TextAlign = ContentAlignment.MiddleCenter;
             Who_txtb.BorderStyle = BorderStyle.FixedSingle;
             Who_txtb.BackColor = Color.FromArgb(50, 50, 50);
             Who_txtb.ForeColor = Color.FromArgb(190, 190, 190);
@@ -170,6 +166,7 @@ namespace BorrowIT
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 AddItem();
+                ActiveControl = null;
             }
         }
 
@@ -178,6 +175,7 @@ namespace BorrowIT
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 AddItem();
+                ActiveControl = null;
             }
         }
     }

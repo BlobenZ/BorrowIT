@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.titleBar_Panel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +55,7 @@
             this.itemName_txtb.Name = "itemName_txtb";
             this.itemName_txtb.Size = new System.Drawing.Size(139, 20);
             this.itemName_txtb.TabIndex = 0;
+            this.itemName_txtb.TabStop = false;
             this.itemName_txtb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.itemName_txtb_KeyPress);
             // 
             // who_txtb
@@ -67,6 +69,7 @@
             this.who_txtb.Name = "who_txtb";
             this.who_txtb.Size = new System.Drawing.Size(131, 20);
             this.who_txtb.TabIndex = 1;
+            this.who_txtb.TabStop = false;
             this.who_txtb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.who_txtb_KeyPress);
             // 
             // add_btn
@@ -80,6 +83,7 @@
             this.add_btn.Name = "add_btn";
             this.add_btn.Size = new System.Drawing.Size(93, 24);
             this.add_btn.TabIndex = 2;
+            this.add_btn.TabStop = false;
             this.add_btn.Text = "Add";
             this.add_btn.UseVisualStyleBackColor = true;
             this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
@@ -94,6 +98,7 @@
             this.label1.Size = new System.Drawing.Size(76, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Item Name";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -105,12 +110,13 @@
             this.label2.Size = new System.Drawing.Size(35, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Who";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // itemsPanel
             // 
-            this.itemsPanel.Location = new System.Drawing.Point(0, 101);
+            this.itemsPanel.Location = new System.Drawing.Point(0, 106);
             this.itemsPanel.Name = "itemsPanel";
-            this.itemsPanel.Size = new System.Drawing.Size(503, 490);
+            this.itemsPanel.Size = new System.Drawing.Size(503, 487);
             this.itemsPanel.TabIndex = 5;
             // 
             // titleBar_Panel
@@ -141,6 +147,7 @@
             this.minimize_btn.Name = "minimize_btn";
             this.minimize_btn.Size = new System.Drawing.Size(40, 41);
             this.minimize_btn.TabIndex = 1;
+            this.minimize_btn.TabStop = false;
             this.minimize_btn.Text = "-";
             this.minimize_btn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.minimize_btn.UseVisualStyleBackColor = false;
@@ -160,6 +167,7 @@
             this.exit_btn.Name = "exit_btn";
             this.exit_btn.Size = new System.Drawing.Size(40, 41);
             this.exit_btn.TabIndex = 0;
+            this.exit_btn.TabStop = false;
             this.exit_btn.Text = "X";
             this.exit_btn.UseVisualStyleBackColor = true;
             this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
@@ -183,7 +191,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.label4.Font = new System.Drawing.Font("Courier New", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 60);
             this.label4.TabIndex = 7;
@@ -207,12 +215,21 @@
             this.panel1.Size = new System.Drawing.Size(503, 60);
             this.panel1.TabIndex = 8;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SlateGray;
+            this.panel2.Location = new System.Drawing.Point(0, 99);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(503, 5);
+            this.panel2.TabIndex = 9;
+            // 
             // BorrowIT_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(503, 592);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.titleBar_Panel);
             this.Controls.Add(this.itemsPanel);
@@ -241,6 +258,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
