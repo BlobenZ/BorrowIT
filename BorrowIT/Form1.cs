@@ -73,7 +73,7 @@ namespace BorrowIT
         {
             //New Panel
             Panel p = new Panel();
-            p.Width = 490;
+            p.Width = 470;
             p.Height = 42;
             p.Top = positon * 42;
             p.Left = 16;
@@ -106,7 +106,7 @@ namespace BorrowIT
             Who_txtb.BackColor = Color.FromArgb(50, 50, 50);
             Who_txtb.ForeColor = Color.FromArgb(190, 190, 190);
             //X_Btn
-            Delete_btn.Width = 60;
+            Delete_btn.Width = 50;
             Delete_btn.Height = 30;
             Delete_btn.Text = "X";
             Delete_btn.Font = new Font("Lucida Sans Unicode", 14, FontStyle.Bold);
