@@ -236,6 +236,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BorrowIT_Form";
             this.Text = "BorrowIT";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BorrowIT_Form_FormClosing);
+            this.Load += new System.EventHandler(this.BorrowIT_Form_Load);
             this.titleBar_Panel.ResumeLayout(false);
             this.titleBar_Panel.PerformLayout();
             this.panel1.ResumeLayout(false);

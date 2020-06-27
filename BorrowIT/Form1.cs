@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows;
 using System.Security.Policy;
+using System.IO;
 
 namespace BorrowIT
 {
@@ -177,6 +178,36 @@ namespace BorrowIT
                 AddItem();
                 ActiveControl = null;
             }
+        }
+
+        private void BorrowIT_Form_Load(object sender, EventArgs e)
+        {
+            if(File.Exists("ItemsData.txt"))
+            {
+                string[] lines = File.ReadAllLines("ItemsData.txt");
+                if (lines != null)
+                {
+                    for (int i = 0; i < lines.Length; i++)
+                    {
+                        Item item = new Item(lines[i], lines[i + 1]);
+                        Items.Add(item);
+                        i++;
+                    }
+                    RenderItems();
+                }
+            }
+        }
+
+        private void BorrowIT_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            TextWriter tw = new StreamWriter("ItemsData.txt");
+            foreach (Item item in Items)
+            {
+                //var Line = item.GetItemName + ":" + item.GetWho;
+                tw.WriteLine(item.GetItemName());
+                tw.WriteLine(item.GetWho());
+            }
+            tw.Close();
         }
     }
 }
