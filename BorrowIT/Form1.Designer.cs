@@ -33,7 +33,6 @@
             this.save_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.items_list = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // itemName_txtb
@@ -78,20 +77,11 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Who";
             // 
-            // items_list
-            // 
-            this.items_list.FormattingEnabled = true;
-            this.items_list.Location = new System.Drawing.Point(13, 68);
-            this.items_list.Name = "items_list";
-            this.items_list.Size = new System.Drawing.Size(377, 355);
-            this.items_list.TabIndex = 5;
-            // 
             // BorrowIT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 450);
-            this.Controls.Add(this.items_list);
+            this.ClientSize = new System.Drawing.Size(405, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.save_btn);
@@ -111,7 +101,6 @@
         private System.Windows.Forms.Button save_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox items_list;
     }
 }
 
