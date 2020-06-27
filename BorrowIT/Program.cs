@@ -16,7 +16,7 @@ namespace BorrowIT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BorrowIT());
+            Application.Run(new BorrowIT_Form());
         }
     }
 }
