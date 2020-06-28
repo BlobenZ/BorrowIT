@@ -214,7 +214,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BorrowIT"
         "ProductCode" = "8:{B65E44C9-502D-45E0-A374-F4A8013D9E97}"
-        "PackageCode" = "8:{FA4EC593-0F9C-496D-942A-3F7847FD31A2}"
+        "PackageCode" = "8:{357CE62E-5127-4380-882F-2771F4695B26}"
         "UpgradeCode" = "8:{60EDC5E6-695D-4BC0-8399-FB1743C8D578}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -336,7 +336,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C4E85704EBA5495DAA672273BB0D6192"
             {
-            "Name" = "8:BorrowIT Desktop"
+            "Name" = "8:BorrowIT"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
