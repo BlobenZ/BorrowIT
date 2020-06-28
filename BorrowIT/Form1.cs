@@ -21,11 +21,18 @@ namespace BorrowIT
         List<Item> Items;
         List<Button> ItemsDeletedButtons;
 
+        string AppDataPath;
+        string DataDirPath;
+        string DataFilePath;
+
         //Main Init
         public BorrowIT_Form()
         {
             InitializeComponent();
             Items = new List<Item>();
+            AppDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            DataFilePath = AppDataPath + "\\BenZoft\\BorrowIT\\ItemData.txt";
+            DataDirPath = AppDataPath + "\\BenZoft\\BorrowIT";
 
             // Title Bar
             minimize_btn.FlatAppearance.BorderSize = 0;
@@ -180,11 +187,12 @@ namespace BorrowIT
             }
         }
 
+        //Save / Load
         private void BorrowIT_Form_Load(object sender, EventArgs e)
         {
-            if(File.Exists("ItemsData.txt"))
+            if(File.Exists(DataFilePath))
             {
-                string[] lines = File.ReadAllLines("ItemsData.txt");
+                string[] lines = File.ReadAllLines(DataFilePath);
                 if (lines != null)
                 {
                     for (int i = 0; i < lines.Length; i++)
@@ -200,7 +208,12 @@ namespace BorrowIT
 
         private void BorrowIT_Form_FormClosing(object sender, FormClosingEventArgs e)
         {
-            TextWriter tw = new StreamWriter("ItemsData.txt");
+            if(!Directory.Exists(DataDirPath))
+            {
+                Directory.CreateDirectory(DataDirPath);
+            }
+
+            TextWriter tw = new StreamWriter(DataFilePath);
             foreach (Item item in Items)
             {
                 //var Line = item.GetItemName + ":" + item.GetWho;
