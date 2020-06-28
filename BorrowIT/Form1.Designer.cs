@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BorrowIT_Form));
             this.itemName_txtb = new System.Windows.Forms.TextBox();
             this.who_txtb = new System.Windows.Forms.TextBox();
             this.add_btn = new System.Windows.Forms.Button();
@@ -41,8 +42,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.titleBar_Panel.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // itemName_txtb
@@ -123,6 +126,7 @@
             // titleBar_Panel
             // 
             this.titleBar_Panel.BackColor = System.Drawing.Color.SlateGray;
+            this.titleBar_Panel.Controls.Add(this.pictureBox1);
             this.titleBar_Panel.Controls.Add(this.label3);
             this.titleBar_Panel.Controls.Add(this.minimize_btn);
             this.titleBar_Panel.Controls.Add(this.exit_btn);
@@ -180,8 +184,8 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label3.Location = new System.Drawing.Point(1, 3);
+            this.label3.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label3.Location = new System.Drawing.Point(36, 3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(166, 37);
             this.label3.TabIndex = 2;
@@ -224,6 +228,17 @@
             this.panel2.Size = new System.Drawing.Size(503, 5);
             this.panel2.TabIndex = 9;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BorrowIT.Properties.Resources.BorrowIT_Icon;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // BorrowIT_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,6 +250,7 @@
             this.Controls.Add(this.titleBar_Panel);
             this.Controls.Add(this.itemsPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BorrowIT_Form";
             this.Text = "BorrowIT";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BorrowIT_Form_FormClosing);
@@ -243,6 +259,7 @@
             this.titleBar_Panel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,6 +279,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
